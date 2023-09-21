@@ -106,7 +106,7 @@ int main()
     //calculating discriminant
     d = pow(B, 2) - 4 * A * C;
     cout << "Discriminant: " << d << endl;
-    if (d > 0)
+    if (d >= 0)
     {
         //validating input
         cout << "Input x1 and x2: ";
