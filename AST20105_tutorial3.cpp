@@ -50,12 +50,13 @@ double inter_bisection(int A, int B, int C, double x1, double x2, double fx1, do
     }
     else if (fm == 0)
     {
-        return m;
+        return m;  
     }
     else if (abs(x1 - x2) < 0.01 || abs(fm) < 0.01)
     {
         return x1;
     }
+    return 0;
 }
 
 double recur_bisection(int A, int B, int C, double x1, double x2, double fx1, double fx2)
