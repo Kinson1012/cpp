@@ -100,13 +100,20 @@ int main()
     int A, B, C, d;
     double x1, x2, fx1, fx2;
     //asking for input
+    do{
     cout << "Ax^2 + Bx + C" << endl;
     cout << "Input values  of A, B and C: ";
     cin >> A >> B >> C;
     //calculating discriminant
     d = pow(B, 2) - 4 * A * C;
     cout << "Discriminant: " << d << endl;
-    if (d >= 0)
+    if(d<0){
+        cout << "No real root" << endl;
+        cout << "Please input again" << endl;
+        cout << endl;
+    }
+    }while(d<0);
+    if(d>=0)
     {
         //validating input
         cout << "Input x1 and x2: ";
