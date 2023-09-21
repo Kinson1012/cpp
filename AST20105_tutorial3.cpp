@@ -61,6 +61,7 @@ double inter_bisection(int A, int B, int C, double x1, double x2, double fx1, do
 double recur_bisection(int A, int B, int C, double x1, double x2, double fx1, double fx2)
 {
     double m, fm;
+    fm = sub_num(A, B, C, m);
     if (fx1 == 0)
     {
         return x1;
@@ -120,4 +121,5 @@ int main()
              << "\n============================" << endl;
         cout << "Root: " << recur_bisection(A, B, C, x1, x2, fx1, fx2) << endl;
     }
+    return 0;
 }
